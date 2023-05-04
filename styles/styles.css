@@ -1,24 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: #D5DDE3;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: #303313;
     display: block;
     padding: 20px;
 }
 
 h1 {
     color: steelblue;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
 }
 
 p {
@@ -29,13 +27,30 @@ main {
     max-width: 840px;
 }
 
+main h1, main p {
+    padding : 0.2rem 1rem;
+    }
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+}
+
 aside{
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1em;
-    background-color: #d6e0e9;
-    color: #333;
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 aside img {
@@ -44,7 +59,20 @@ aside img {
 }
 
 footer {
-    margin-top: 1em;
     border-top: 1px solid #000;
+    margin-top: 1em;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #B6D8E3;
+    color: #333;
+}
+
+.intend {
+    padding-left: 1.5rem;
 }
