@@ -76,7 +76,7 @@ nav a:hover {
     float: right;
     width: 20%;
     height: auto;
-    padding: 0.5rem;
+    padding: 3%;
 }
 
 .hero h1 {
@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 .hero article {
-    top: 30%;
+    top: 33%;
     right: 0;
     left: 0;
     max-width: 81%;
