@@ -19,6 +19,7 @@
     max-width: 960px;
     padding: 0;
     margin: auto;
+    box-sizing: border-box;
 }
 
 body {
@@ -370,6 +371,51 @@ aside label {
     margin: 0;
 }
 
-/* .intend {
-    padding-left: 2.5rem;
+/* table {
+    display: block;
 } */
+
+/* table, th, td {
+    border: 0.5px solid #333;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    padding: 0.5rem;
+} */
+
+/* * {
+    box-sizing: border-box;
+} */
+    
+table, th, td {
+    display: grid;
+    border: 0.5px solid #333;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+table {
+    margin-top: 1rem;
+}
+    
+thead, tbody, tr {
+    display: contents;
+}
+
+th, td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.intend {
+    padding-left: 0.5rem;
+}
