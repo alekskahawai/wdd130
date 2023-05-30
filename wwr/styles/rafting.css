@@ -24,7 +24,7 @@
 body {
     font-family: var(--paragraph-font);
     width: 960px;
-    padding: 10px;
+    padding: 10px; /* <-- */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,10 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     padding: 20px;
-    background-color: var(--accent1-color);
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 4fr;
+    background-color: var(--accent1-color);
 }
 
 p {
@@ -46,11 +46,11 @@ p {
 }
 
 nav {
-    background-color: var(--nav-background-color);
     display: flex;
     width: 100%;
     font-size: 1.2rem;
     font-weight: 700;
+    background-color: var(--nav-background-color);
 }
 
 nav a {
@@ -69,13 +69,83 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 70% 30%;
+/* ContactUs page */
+section {
+    display: block;
+    padding: 1.2rem;
 }
 
+section p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.3rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-items: left;
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+label, input, button, textarea {
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+label {
+    text-align: left;
+    padding: 0.5rem;
+    display: block;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+}
 
 /* Class Selectors */
+/* All pages */
 .hero {
     position: relative;
     padding: 1rem 0;
@@ -122,19 +192,6 @@ footer {
     background-color: rgb(34, 87, 122, .7);
 }
 
-
-.section-1 {
-    display: block;
-    padding: 1.2rem;
-    /* font-size: 1.2rem;
-    line-height: 2rem; */
-}
-
-.section-1 p {
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
 .section-2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -169,4 +226,33 @@ footer {
 .sociallinks a {
     text-decoration: none;
     background-color: white;
+}
+
+/* About page */
+.section-1 {
+    display: block;
+    padding: 1.2rem;
+    /* font-size: 1.2rem;
+    line-height: 2rem; */
+}
+
+.section-1 p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* ContactUs page */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.radio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
