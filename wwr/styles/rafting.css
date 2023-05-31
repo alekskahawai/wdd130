@@ -419,3 +419,7 @@ th, td {
 .intend {
     padding-left: 0.5rem;
 }
+
+.centered {
+    text-align: right;
+}
